@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import Countdown2 from "../../components/Countdown/Countdown2";
 import MarketCap from "../../components/MarketCap/MarketCap";
@@ -6,17 +6,12 @@ import { Project, data } from '../../Interfaces/InterfaceProject'; // Importando
 import "./Projects.css";
 
 function Projects() {
-    const [showModal, setShowModal] = useState(false);
     const [dates, setDates] = useState<Project[]>([]);
 
     useEffect(() => {
         // Simulando a obtenção dos dados do Firebase com os dados do JSON
         setDates(data);
     }, []);
-
-    const handleOnClose = () => {
-        setShowModal(false);
-    }
 
     return (
         <section className="StyleCard">

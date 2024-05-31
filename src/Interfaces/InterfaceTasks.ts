@@ -1,14 +1,3 @@
-// Representa um tipo de estágio com id, nome e referência de estágio.
-
-interface Task {
-    id?: number; // Id opcional para tarefas que ainda não foram salvas no banco de dados.
-    id_stage: number; // Id do estágio associado à tarefa.
-    id_status?: number; // Id do status associado à tarefa.
-    name: string; // Nome da tarefa.
-    progress: number; // Progresso da tarefa (0-100).
-}
-
-
 export interface TaskStage {
     id: number;
     name: string;

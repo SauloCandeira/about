@@ -6,12 +6,6 @@ interface Task {
     progress: number; // Progresso da tarefa (0-100).
 }
 
-interface MarketCapProps {
-    totalCost: number; // Custo total
-    totalSales: number; // Total de vendas
-    dailyVariation: number; // Variação diária do preço
-}
-
 interface Cost {
     id: number; // Id do custo.
     price: number; // Preço do custo.
@@ -37,12 +31,6 @@ interface Stage {
     id_stage: number; // Id do estágio.
     name: string; // Nome do estágio.
     stage_ref: 'Ideia' | 'Protótipo' | 'Testes' | 'Produção'; // Referência do estágio.
-}
-
-interface Status {
-    id_status: number; // Id do status.
-    name: string; // Nome do status.
-    status_ref: 'Não iniciado' | 'Pausado' | 'Em andamento' | 'Atrasado' | 'Completo'; // Referência do status.
 }
 
 export interface Project {
