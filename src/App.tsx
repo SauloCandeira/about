@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  Projects  from './pages/Projects/Projects'
-
+import  ProjectDetails  from './pages/ProjectDetails/ProjectDetails'
 
 export function App() {
   return (
@@ -9,6 +9,7 @@ export function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/react-deploy/" element={<Projects />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
     </BrowserRouter>
 
