@@ -27,7 +27,7 @@ const ProjectDetails: React.FC = () => {
         // Calcula a porcentagem de conclusão de cada estágio
         const calculateStageCompletion = () => {
             const completionArray: number[] = [];
-            stages.forEach((stage, index) => {
+            stages.forEach((stage) => {
                 const filteredTasks = project.tasks.filter((task) => task.id_stage === stage.id);
                 const totalProgress = filteredTasks.reduce((acc, task) => acc + task.progress, 0);
                 const stageProgress = filteredTasks.length > 0 ? Math.round(totalProgress / filteredTasks.length) : 0;
