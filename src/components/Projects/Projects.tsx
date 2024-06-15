@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import Countdown2 from "../../components/Countdown/Countdown2";
-import MarketCap from "../../components/MarketCap/MarketCap";
+import Countdown2 from "../Countdown/Countdown2";
+import MarketCap from "../MarketCap/MarketCap";
 import { Project, data } from '../../Interfaces/InterfaceProject'; // Importando a interface Project e a variável data
 import "./Projects.css";
 

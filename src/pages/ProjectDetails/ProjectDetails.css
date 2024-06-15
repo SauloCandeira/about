@@ -1,13 +1,29 @@
-/* Project.css */
+/* ProjectDetails.css */
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.project-details-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .project-details {
+  flex: 1;
   background-color: #1f1f1f;
   color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 100%; /* Remover restrição de largura */
+  margin: 20px; /* Ajuste para espaçamento */
   text-align: center;
 }
 
