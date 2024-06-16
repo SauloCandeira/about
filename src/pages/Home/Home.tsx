@@ -11,7 +11,10 @@ const Home: React.FC = () => {
         name: 'Saulo Candeira',
         position: 'Desenvolvedor de Software e Eletrônica',
         image: 'https://via.placeholder.com/150',
-        description: 'Sou formado em Gestão de Negócios, Análise e Desenvolvimento de Sistemas, com pós-graduação em Engenharia de Software. Tenho uma sólida experiência na integração de soluções tecnológicas, combinando habilidades técnicas avançadas com uma visão estratégica para desenvolvimento de software e sistemas eletrônicos.'
+        description: 'Tenho formação em gestão, tecnologia e idiomas, e sou dedicado ao desenvolvimento de software e eletrônica. Busco integrar o mundo dos softwares, impressão 3D e eletrônica para criar inovações tecnológicas. Atuo como programador e, no meu tempo livre, desenvolvo principalmente integrações de placas programáveis com motores elétricos para máquinas CNC, patinetes, bicicletas e drones.',
+        linkedin: 'https://www.linkedin.com/in/saulocandeira',
+        github: 'https://github.com/saulocandeira',
+        resume: 'https://example.com/resume.pdf'
     };
   
     return (
