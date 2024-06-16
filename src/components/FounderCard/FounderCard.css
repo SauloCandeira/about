@@ -1,0 +1,49 @@
+/* FounderCard.css */
+
+.founder-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ocupa 100% da largura disponível */
+  max-width: 680px; /* Largura máxima para evitar que fique muito largo */
+  margin: 10px auto; /* Centraliza horizontalmente */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.founder-info {
+  margin-bottom: 20px;
+}
+
+.founder-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.founder-info p {
+  font-size: 1em;
+  color: #555;
+}
+
+.founder-info .position {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.founder-info .description {
+  font-size: 0.9em;
+}
