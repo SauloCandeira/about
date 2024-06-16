@@ -4,6 +4,8 @@ import Projects from '../../components/Projects/Projects';
 import './Home.css'; // Arquivo de estilos
 import Courses from '../../components/Courses/Courses';
 import FounderCard from '../../components/FounderCard/FounderCard';
+import Marketplace from '../../components/Marketplace/Marketplace';
+import Services from '../../components/Services/Services';
 
 const Home: React.FC = () => {
   
@@ -27,9 +29,11 @@ const Home: React.FC = () => {
         <section className="home__hero">
          
             <FounderCard {...founder} />
+            <Services />
             <Projects />
             <Courses/>
-         
+            <Marketplace/>
+
         </section>
 
          
