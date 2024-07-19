@@ -8,7 +8,7 @@ export function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path="/react-deploy/" element={<Home />} />
+        <Route path="/about/" element={<Home />} />
         <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
     </BrowserRouter>
