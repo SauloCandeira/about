@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './FounderCard.css';
-import img from '../../../public/SauloCandeira.jpg';
+import img from '../../assets/SauloCandeira.jpg';
 
 interface Founder {
     name: string;
