@@ -7,14 +7,14 @@ import img from '../../assets/SauloCandeira.jpg';
 interface Founder {
     name: string;
     position: string;
-    image: string;
+    // image: string;
     description: string;
     linkedin?: string;
     github?: string;
     resume?: string;
 }
 
-const FounderCard: React.FC<Founder> = ({ name, position, image, description, linkedin, github, resume }) => {
+const FounderCard: React.FC<Founder> = ({ name, position, description, linkedin, github, resume }) => {
     return (
         <div className="founder-card">
             <img src={img} alt={name} className="founder-image" />
