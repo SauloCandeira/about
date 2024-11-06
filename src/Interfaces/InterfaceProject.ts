@@ -72,7 +72,7 @@ export const data: Project[] = [
         id: 1,
         title: "IHK",
         subtitle: "Plataforma de Crowdfunding",
-        image: "/assets/images/alva2.jpg",
+        image: "/about/src/assets/hk-logo.jpeg",
         date: "2024-06-01T00:00:00.000Z",
         progress: calculateTotalProgress([
             { id: 1, name: "Design do produto", progress: 80, id_stage: 2, id_status: 3 },
@@ -106,7 +106,7 @@ export const data: Project[] = [
         id: 1,
         title: "Orange Eletrics",
         subtitle: "Mobilidade",
-        image: "/assets/images/alva2.jpg",
+        image: "/about/src/assets/orange-logo.jpeg",
         date: "2024-06-01T00:00:00.000Z",
         progress: calculateTotalProgress([
             { id: 1, name: "Design do produto", progress: 80, id_stage: 2, id_status: 3 },
