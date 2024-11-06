@@ -16,14 +16,16 @@ html, body {
 .home__main {
   flex: 1;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em várias linhas */
   justify-content: center;
+  align-items: flex-start;
   padding: 20px;
   background-color: #f5f5f5;
 }
 
 .home__hero {
   text-align: center;
+  width: 100%; /* Garante que ocupe toda a largura */
 }
 
 .home__hero h1 {
@@ -57,4 +59,22 @@ html, body {
   padding: 10px 20px;
   background-color: #282c34;
   color: #61dafb;
+}
+
+.home__component {
+  width: 100%;
+  max-width: 600px; /* Limita a largura máxima dos componentes */
+  margin: 10px;
+  box-sizing: border-box; /* Garante que padding e bordas não aumentem a largura */
+}
+
+@media (max-width: 768px) {
+  .home__main {
+    flex-direction: column; /* Em telas pequenas, organiza os componentes em coluna */
+    align-items: center;
+  }
+
+  .home__component {
+    width: 90%; /* Faz os componentes ocuparem 90% da largura da tela */
+  }
 }

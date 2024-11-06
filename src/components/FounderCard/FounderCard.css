@@ -71,3 +71,10 @@
   background-color: #0073b1;
   color: #fff;
 }
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  .founder-card {
+    max-width: 300px;
+  }
+}
