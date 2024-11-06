@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './FounderCard.css';
+import img from '../../../public/SauloCandeira.jpg';
 
 interface Founder {
     name: string;
@@ -16,7 +17,7 @@ interface Founder {
 const FounderCard: React.FC<Founder> = ({ name, position, image, description, linkedin, github, resume }) => {
     return (
         <div className="founder-card">
-            <img src={image} alt={name} className="founder-image" />
+            <img src={img} alt={name} className="founder-image" />
             <div className="founder-info">
                 <h2>{name}</h2>
                 <p className="position">{position}</p>
