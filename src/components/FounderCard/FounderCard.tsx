@@ -23,10 +23,38 @@ const FounderCard: React.FC<Founder> = ({ name, position, image, description, li
                 <p className="description">{description}</p>
             </div>
             <div className="social-links">
-                {linkedin && <a href={linkedin} target="_blank" rel="noopener noreferrer" className="social-icon">LinkedIn</a>}
-                {github && <a href={github} target="_blank" rel="noopener noreferrer" className="social-icon">GitHub</a>}
-                {resume && <a href={resume} target="_blank" rel="noopener noreferrer" className="resume-button">Currículo</a>}
+            {linkedin && (
+                <a
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                >
+                LinkedIn
+                </a>
+            )}
+            {github && (
+                <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                >
+                GitHub
+                </a>
+            )}
+            {resume && (
+                <a
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume-button"
+                >
+                Currículo
+                </a>
+            )}
             </div>
+
         </div>
     );
 };

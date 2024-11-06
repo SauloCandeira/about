@@ -76,5 +76,10 @@
 @media (max-width: 768px) {
   .founder-card {
     max-width: 300px;
+    padding: 15px; /* Reduzindo o padding em telas menores */
+  }
+  .founder-image {
+    width: 120px; /* Tamanho reduzido para a imagem */
+    height: 120px;
   }
 }
