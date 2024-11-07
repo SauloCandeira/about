@@ -15,6 +15,7 @@ const Services: React.FC = () => {
           <Tab className="react-tabs__tab">Software</Tab>
           <Tab className="react-tabs__tab">Eletrônica</Tab>
           <Tab className="react-tabs__tab">Prototipacao 3D</Tab>
+          <Tab className="react-tabs__tab">Négocios</Tab>
         </TabList>
 
         <TabPanel>
@@ -63,6 +64,29 @@ const Services: React.FC = () => {
             </div>
           </div>
         </TabPanel>
+
+
+        <TabPanel>
+          <div className="service-category">
+            <div className="service-item">
+              <h2>Plano de negocio</h2>
+              <p>Criação de modelos de negocios para empresas que querem iniciar na era digital.</p>
+            </div>
+            
+            <div className="service-item">
+              <h2>Metodologia Agil</h2>
+              <p>Implementação de metologias ageis para melhorar a eficiencia de negocios e empresas.</p>
+            </div>
+
+
+            <div className="service-item">
+              <h2>Sistema de gestão</h2>
+              <p>Sistema de gestão de projetos, para maximizar a eficiencia do negocio ou projeto .</p>
+            </div>
+
+          </div>
+        </TabPanel>
+
       </Tabs>
     </div>
   );
