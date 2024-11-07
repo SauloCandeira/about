@@ -6,9 +6,21 @@
   background-color: #282c34;
 }
 
-.header__logo img {
-  height: 40px;
-  /* text-color: #fff */
+.header__text {
+  font-size: 1.5em; /* Texto menor */
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px; /* Ajuste de espaçamento das letras */
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 0 5px #00e6e6, 0 0 10px #00e6e6, 0 0 15px #00e6e6; /* Efeito neon nas letras */
+  transition: text-shadow 0.3s ease-in-out; /* Suaviza o efeito */
+}
+
+.header__text:hover {
+  text-shadow: 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #00e6e6; /* Intensifica o brilho no hover */
 }
 
 .header__nav {
