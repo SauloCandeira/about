@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import Countdown2 from "../Countdown/Countdown2";
-import MarketCap from "../MarketCap/MarketCap";
+// import MarketCap from "../MarketCap/MarketCap";
 import { Project, data } from '../../Interfaces/InterfaceProject'; // Importando a interface Project e a variável data
 import "./Projects.css";
 
@@ -25,17 +25,24 @@ function Projects() {
                             <div className="sub-title">{item.subtitle}</div>
                             <div className="progress-container">
                                 <Countdown2 data={new Date(item.date)} title={item.title} />
-                                <MarketCap
+                                {/* <MarketCap
                                     totalCost={item.budget.totalCost}
                                     totalSales={item.budget.totalSales}
                                     dailyVariation={item.dailyVariation}
-                                />
+                                /> */}
                                 <progress id={`file${index}`} value={item.progress} max="100"></progress>
                                 <span id="progress-percentage">{item.progress}%</span>
                             </div>
+                            <div className="btn-website">
+                                <button>
+                                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                        Website
+                                    </a>
+                                </button>
+                            </div>
                             <div className="btn">
                                 <Link to={`/project/${item.id}`}>
-                                    <button>Ver mais</button>
+                                    <button>Cronograma</button>
                                 </Link>
                             </div>
                         </div>
