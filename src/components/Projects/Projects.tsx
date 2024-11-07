@@ -15,6 +15,7 @@ function Projects() {
 
     return (
         <section className="StyleCard">
+            <h1 className="marketplace-title">Portifolio</h1>
             <div className="slider owl-carousel">
                 {dates.map((item, index) => (
                     <div className="card" key={item.id}>

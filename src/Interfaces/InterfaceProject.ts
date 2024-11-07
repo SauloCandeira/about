@@ -1,5 +1,7 @@
 import img1 from '../assets/hk-logo.jpeg';
 import img2 from '../assets/orange-logo.jpeg';
+import img3 from '../assets/htm-logo.jpeg';
+
 interface Task {
     id?: number; // Id opcional para tarefas que ainda não foram salvas no banco de dados.
     id_stage: number; // Id do estágio associado à tarefa.
@@ -70,6 +72,40 @@ function calculateTotalProgress(tasks: Task[]): number {
 }
 
 export const data: Project[] = [
+    {
+        id: 1,
+        title: "HOW TO MAKE",
+        subtitle: "Plataforma de cursos",
+        image: img3,
+        date: "2024-06-01T00:00:00.000Z",
+        progress: calculateTotalProgress([
+            { id: 1, name: "Design do produto", progress: 80, id_stage: 2, id_status: 3 },
+            { id: 2, name: "Desenvolvimento do motor", progress: 50, id_stage: 2, id_status: 3 },
+            { id: 3, name: "Testes iniciais", progress: 30, id_stage: 2, id_status: 3 }
+        ]),
+        link: "https://saulocandeira.github.io/como-criar-um-website-v2/",
+        dailyVariation: 2.5,
+        tasks: [
+            { id: 1, name: "Design do produto", progress: 80, id_stage: 2, id_status: 3 },
+            { id: 2, name: "Desenvolvimento do motor", progress: 50, id_stage: 2, id_status: 3 },
+            { id: 3, name: "Testes iniciais", progress: 30, id_stage: 2, id_status: 3 },
+            { id: 3, name: "Testes iniciais", progress: 30, id_stage: 1, id_status: 2 }
+        ],
+        stage: { id_stage: 2, name: 'Protótipo', stage_ref: 'Protótipo' },
+        salePrice: 1000,
+        budget: {
+            id: 1,
+            cost: [{ id: 1, price: 800, name: 'Custo de produção' }],
+            sale: [{ id: 1, price: 1000, name: 'Preço de venda' }],
+            totalCost: calculateTotalCost([{ id: 1, price: 800, name: 'Custo de produção' }]),
+            totalSales: calculateTotalSales([{ id: 1, price: 1000, name: 'Preço de venda' }]),
+            profit: calculateProfit(
+                calculateTotalCost([{ id: 1, price: 800, name: 'Custo de produção' }]),
+                calculateTotalSales([{ id: 1, price: 1000, name: 'Preço de venda' }])
+            )
+        },
+        marketCap: 50000
+    },
     {
         id: 1,
         title: "IHK",

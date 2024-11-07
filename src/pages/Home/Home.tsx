@@ -31,8 +31,8 @@ const Home: React.FC = () => {
             <FounderCard {...founder} />
             <Services />
             <Projects />
-            <Courses/>
-            <Marketplace/>
+            {/* <Courses/> */}
+            {/* <Marketplace/> */}
 
         </section>
 
