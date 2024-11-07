@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header__text">
-        SAULO CANDEIRA
+        SC
       </div>
 
       <nav className="header__nav">
