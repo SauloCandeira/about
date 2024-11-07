@@ -16,8 +16,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.2s;
+  transition: transform 0.2s, filter 0.3s ease-in-out;
   width: 350px;
+  position: relative; /* Para posicionar a sobreposição "Em breve..." */
 }
 
 .card:hover {
@@ -67,11 +68,14 @@
   margin-top: 5px;
 }
 
+/* Alinhar os botões à esquerda */
 .btn-website, .btn {
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
   margin-top: 10px;
 }
 
+/* Estilo dos botões */
 .btn-website button, .btn button {
   background-color: #222;
   color: #00e6e6; /* Cor neon */
@@ -158,4 +162,34 @@
 .divider {
   font-size: 12px;
   margin: 0 1px;
+}
+
+/* Blur effect when status is "não iniciado" */
+.card.blur .img img, .card.blur .content {
+  filter: blur(5px);
+  pointer-events: none; /* Evita que o usuário interaja com o card */
+  opacity: 0.6; /* Adicionando um pouco de transparência para destacar o blur */
+}
+
+/* Sobreposição com texto "Em breve..." */
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00e6e6; /* Cor neon para o texto */
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  visibility: hidden; /* Inicialmente invisível */
+  animation: neonGlow 2s infinite alternate; /* Efeito neon na sobreposição */
+}
+
+.card.blur .overlay {
+  visibility: visible; /* Torna visível quando o status é "não iniciado" */
 }

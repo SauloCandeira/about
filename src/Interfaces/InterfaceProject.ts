@@ -43,6 +43,7 @@ export interface Project {
     subtitle: string;
     date: string;
     image: string;
+    status: string;
     progress: number;
     stage: Stage;
     tasks: Task[];
@@ -76,6 +77,7 @@ export const data: Project[] = [
         id: 1,
         title: "HOW TO MAKE",
         subtitle: "Plataforma de cursos",
+        status: "iniciado",
         image: img3,
         date: "2024-06-01T00:00:00.000Z",
         progress: calculateTotalProgress([
@@ -107,10 +109,11 @@ export const data: Project[] = [
         marketCap: 50000
     },
     {
-        id: 1,
+        id: 2,
         title: "IHK",
         subtitle: "Plataforma de Crowdfunding",
         image: img1,
+        status: "não iniciado",
         date: "2024-06-01T00:00:00.000Z",
         progress: calculateTotalProgress([
             { id: 1, name: "Design do produto", progress: 80, id_stage: 2, id_status: 3 },
@@ -141,9 +144,10 @@ export const data: Project[] = [
         marketCap: 50000
     },
     {
-        id: 1,
+        id: 3,
         title: "Orange Eletrics",
         subtitle: "Mobilidade",
+        status: "não iniciado",
         image: img2,
         date: "2024-06-01T00:00:00.000Z",
         progress: calculateTotalProgress([
