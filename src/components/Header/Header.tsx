@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'; // Arquivo de estilos
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'; // Importa o componente LanguageSwitcher
 
 const Header: React.FC = () => {
