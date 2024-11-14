@@ -10,14 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flag-icon-css": "^4.1.7",
+    "i18next": "^23.16.5",
+    "i18next-http-backend": "^2.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^15.1.1",
     "react-router-dom": "^6.23.1",
     "react-tabs": "^6.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@types/react-i18next": "^8.1.0",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",

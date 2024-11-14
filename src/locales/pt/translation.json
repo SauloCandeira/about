@@ -1,0 +1,58 @@
+{
+  "founderCard": {
+    "name": "Saulo Candeira",
+    "position": "Desenvolvedor de Software e Eletrônica",
+    "description": "Tenho formação em gestão, tecnologia e idiomas, e sou dedicado ao desenvolvimento de software e eletrônica. Busco integrar o mundo dos softwares, impressão 3D e eletrônica para criar inovações tecnológicas. Atuo como programador e, no meu tempo livre, desenvolvo principalmente integrações de placas programáveis com motores elétricos para máquinas CNC, patinetes, bicicletas e drones..",
+    "socialLinks": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "resume": "Currículo"
+    }
+  },
+
+
+  "services": {
+    "title": "Serviços",
+    "tabs": {
+      "software": "Software",
+      "electronics": "Eletrônica",
+      "3dPrototyping": "Prototipação 3D",
+      "business": "Negócios"
+    },
+    "software": {
+      "webDevelopment": "Desenvolvimento Web",
+      "webDevelopmentDesc": "Criação de websites responsivos e modernos utilizando as tecnologias mais recentes.",
+      "mobileDevelopment": "Desenvolvimento Mobile",
+      "mobileDevelopmentDesc": "Aplicativos móveis para Android e iOS com performance nativa e ótima experiência de usuário.",
+      "cloud": "Cloud",
+      "cloudDesc": "Serviços em nuvem para armazenamento, processamento e escalabilidade de aplicações.",
+      "iot": "IoT",
+      "iotDesc": "Integração e desenvolvimento de soluções para a Internet das Coisas."
+    },
+    "electronics": {
+      "vehicleMaintenance": "Manutenção de Veículos Elétricos",
+      "vehicleMaintenanceDesc": "Serviços de manutenção para todos os tipos de veículos elétricos.",
+      "lithiumBatteryRecovery": "Recuperação de Baterias de Lítio",
+      "lithiumBatteryRecoveryDesc": "Recuperação e recondicionamento de baterias de lítio para aumentar a vida útil."
+    },
+    "prototyping": {
+      "drawing3d": "Desenho 3D",
+      "drawing3dDesc": "Criação de modelos tridimensionais detalhados para uma variedade de aplicações.",
+      "3dPrinting": "Impressão 3D",
+      "3dPrintingDesc": "Transforme seus desenhos digitais em objetos físicos com nossas impressoras 3D de alta qualidade."
+    },
+    "business": {
+      "businessPlan": "Plano de Negócio",
+      "businessPlanDesc": "Criação de modelos de negócios para empresas que querem iniciar na era digital.",
+      "agileMethodology": "Metodologia Ágil",
+      "agileMethodologyDesc": "Implementação de metodologias ágeis para melhorar a eficiência de negócios e empresas.",
+      "managementSystem": "Sistema de Gestão",
+      "managementSystemDesc": "Sistema de gestão de projetos para maximizar a eficiência do negócio ou projeto."
+    }
+  }
+
+
+
+
+
+}

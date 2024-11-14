@@ -1,0 +1,52 @@
+{
+  "founderCard": {
+    "name": "Saulo Candeira",
+    "position": "Software and Electronics Developer",
+    "description": "I have a background in management, technology, and languages, and I am dedicated to software and electronics development. I aim to integrate software, 3D printing, and electronics to create technological innovations. I work as a programmer, and in my spare time, I mainly develop integrations of programmable boards with electric motors for CNC machines, scooters, bicycles, and drones.",
+    "socialLinks": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "resume": "Resume"
+    }
+  },
+
+  "services": {
+    "title": "Services",
+    "tabs": {
+      "software": "Software",
+      "electronics": "Electronics",
+      "3dPrototyping": "3D Prototyping",
+      "business": "Business"
+    },
+    "software": {
+      "webDevelopment": "Web Development",
+      "webDevelopmentDesc": "Create responsive and modern websites using the latest technologies.",
+      "mobileDevelopment": "Mobile Development",
+      "mobileDevelopmentDesc": "Mobile apps for Android and iOS with native performance and great user experience.",
+      "cloud": "Cloud",
+      "cloudDesc": "Cloud services for storage, processing, and scalability of applications.",
+      "iot": "IoT",
+      "iotDesc": "Integration and development of solutions for the Internet of Things."
+    },
+    "electronics": {
+      "vehicleMaintenance": "Electric Vehicle Maintenance",
+      "vehicleMaintenanceDesc": "Maintenance services for all types of electric vehicles.",
+      "lithiumBatteryRecovery": "Lithium Battery Recovery",
+      "lithiumBatteryRecoveryDesc": "Recovery and reconditioning of lithium batteries to extend their lifespan."
+    },
+    "prototyping": {
+      "drawing3d": "3D Drawing",
+      "drawing3dDesc": "Create detailed 3D models for a variety of applications.",
+      "3dPrinting": "3D Printing",
+      "3dPrintingDesc": "Turn your digital designs into physical objects with our high-quality 3D printers."
+    },
+    "business": {
+      "businessPlan": "Business Plan",
+      "businessPlanDesc": "Create business models for companies looking to enter the digital era.",
+      "agileMethodology": "Agile Methodology",
+      "agileMethodologyDesc": "Implement agile methodologies to improve business and company efficiency.",
+      "managementSystem": "Management System",
+      "managementSystemDesc": "Project management system to maximize business or project efficiency."
+    }
+  }
+}

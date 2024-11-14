@@ -1,0 +1,93 @@
+/* HeaderTwo.css */
+header {
+  background-color: rgba(9, 37, 84, 0.9) !important; /* Azul escuro com 90% de opacidade */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  padding: 0 20px; /* Adiciona padding horizontal para garantir que o conteúdo não fique colado nas bordas */
+}
+
+.language-switcher {
+  /* Adiciona estilo opcional para LanguageSwitcher se necessário */
+}
+
+.btn-login {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap; /* Impede quebra de linha dentro do botão */
+  transition: background-color 0.3s; /* Suaviza a transição de cor */
+  margin-left: auto; /* Faz com que o botão de login fique alinhado ao final */
+}
+
+.btn-login:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.go-top {
+  display: none; /* Botão para voltar ao topo invisível por padrão */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.go-top.active {
+  display: block; /* Torna o botão visível quando ativo */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+    padding: 10px; /* Ajusta o padding para dispositivos móveis */
+  }
+
+  .container {
+    flex-direction: row; /* Mantém a direção dos itens em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 10px 20px; /* Ajusta o padding para dispositivos móveis */
+    justify-content: space-between; /* Garante que os itens fiquem em extremos opostos */
+  }
+
+  .language-switcher {
+    margin-right: 0; /* Remove a margem à direita em dispositivos móveis */
+  }
+
+  .btn-login {
+    background-color: #0056b3; /* Ajusta a cor de fundo do botão para contraste em dispositivos móveis */
+    margin-left: 0; /* Remove a margem à esquerda no mobile */
+  }
+
+  .go-top {
+    display: block; /* Torna o botão de voltar ao topo visível em dispositivos móveis */
+    position: fixed; /* Posiciona o botão fixo no canto inferior direito */
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente ao botão */
+    color: #fff; /* Cor do texto do botão */
+    border-radius: 50%; /* Torna o botão circular */
+    padding: 10px;
+    font-size: 24px; /* Ajusta o tamanho do ícone */
+  }
+}

@@ -4,37 +4,40 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './Services.css';
+import { useTranslation } from 'react-i18next';
 
 const Services: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="services-container">
-      <h1 className="services-title">Serviços</h1>
+      <h1 className="services-title">{t('services.title')}</h1>
 
       <Tabs>
         <TabList className="react-tabs__tab-list">
-          <Tab className="react-tabs__tab">Software</Tab>
-          <Tab className="react-tabs__tab">Eletrônica</Tab>
-          <Tab className="react-tabs__tab">Prototipacao 3D</Tab>
-          <Tab className="react-tabs__tab">Négocios</Tab>
+          <Tab className="react-tabs__tab">{t('services.tabs.software')}</Tab>
+          <Tab className="react-tabs__tab">{t('services.tabs.electronics')}</Tab>
+          <Tab className="react-tabs__tab">{t('services.tabs.3dPrototyping')}</Tab>
+          <Tab className="react-tabs__tab">{t('services.tabs.business')}</Tab>
         </TabList>
 
         <TabPanel>
           <div className="service-category">
             <div className="service-item">
-              <h2>Desenvolvimento Web</h2>
-              <p>Criação de websites responsivos e modernos utilizando as tecnologias mais recentes.</p>
+              <h2>{t('services.software.webDevelopment')}</h2>
+              <p>{t('services.software.webDevelopmentDesc')}</p>
             </div>
             <div className="service-item">
-              <h2>Desenvolvimento Mobile</h2>
-              <p>Aplicativos móveis para Android e iOS com performance nativa e ótima experiência de usuário.</p>
+              <h2>{t('services.software.mobileDevelopment')}</h2>
+              <p>{t('services.software.mobileDevelopmentDesc')}</p>
             </div>
             <div className="service-item">
-              <h2>Cloud</h2>
-              <p>Serviços em nuvem para armazenamento, processamento e escalabilidade de aplicações.</p>
+              <h2>{t('services.software.cloud')}</h2>
+              <p>{t('services.software.cloudDesc')}</p>
             </div>
             <div className="service-item">
-              <h2>IoT</h2>
-              <p>Integração e desenvolvimento de soluções para a Internet das Coisas.</p>
+              <h2>{t('services.software.iot')}</h2>
+              <p>{t('services.software.iotDesc')}</p>
             </div>
           </div>
         </TabPanel>
@@ -42,12 +45,12 @@ const Services: React.FC = () => {
         <TabPanel>
           <div className="service-category">
             <div className="service-item">
-              <h2>Manutenção de Veículos Elétricos</h2>
-              <p>Serviços de manutenção para todos os tipos de veículos elétricos.</p>
+              <h2>{t('services.electronics.vehicleMaintenance')}</h2>
+              <p>{t('services.electronics.vehicleMaintenanceDesc')}</p>
             </div>
             <div className="service-item">
-              <h2>Recuperação de Baterias de Lítio</h2>
-              <p>Recuperação e recondicionamento de baterias de lítio para aumentar a vida útil.</p>
+              <h2>{t('services.electronics.lithiumBatteryRecovery')}</h2>
+              <p>{t('services.electronics.lithiumBatteryRecoveryDesc')}</p>
             </div>
           </div>
         </TabPanel>
@@ -55,38 +58,32 @@ const Services: React.FC = () => {
         <TabPanel>
           <div className="service-category">
             <div className="service-item">
-              <h2>Desenho 3D</h2>
-              <p>Criação de modelos tridimensionais detalhados para uma variedade de aplicações.</p>
+              <h2>{t('services.prototyping.drawing3d')}</h2>
+              <p>{t('services.prototyping.drawing3dDesc')}</p>
             </div>
             <div className="service-item">
-              <h2>Impressão 3D</h2>
-              <p>Transforme seus desenhos digitais em objetos físicos com nossas impressoras 3D de alta qualidade.</p>
+              <h2>{t('services.prototyping.3dPrinting')}</h2>
+              <p>{t('services.prototyping.3dPrintingDesc')}</p>
             </div>
           </div>
         </TabPanel>
-
 
         <TabPanel>
           <div className="service-category">
             <div className="service-item">
-              <h2>Plano de negocio</h2>
-              <p>Criação de modelos de negocios para empresas que querem iniciar na era digital.</p>
+              <h2>{t('services.business.businessPlan')}</h2>
+              <p>{t('services.business.businessPlanDesc')}</p>
             </div>
-            
             <div className="service-item">
-              <h2>Metodologia Agil</h2>
-              <p>Implementação de metologias ageis para melhorar a eficiencia de negocios e empresas.</p>
+              <h2>{t('services.business.agileMethodology')}</h2>
+              <p>{t('services.business.agileMethodologyDesc')}</p>
             </div>
-
-
             <div className="service-item">
-              <h2>Sistema de gestão</h2>
-              <p>Sistema de gestão de projetos, para maximizar a eficiencia do negocio ou projeto .</p>
+              <h2>{t('services.business.managementSystem')}</h2>
+              <p>{t('services.business.managementSystemDesc')}</p>
             </div>
-
           </div>
         </TabPanel>
-
       </Tabs>
     </div>
   );

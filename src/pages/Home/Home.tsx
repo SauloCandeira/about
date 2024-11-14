@@ -6,6 +6,7 @@ import './Home.css'; // Arquivo de estilos
 import FounderCard from '../../components/FounderCard/FounderCard';
 // import Marketplace from '../../components/Marketplace/Marketplace';
 import Services from '../../components/Services/Services';
+// import HeaderTwo from '../../components/HeaderTwo/HeaderTwo';
 
 const Home: React.FC = () => {
   
