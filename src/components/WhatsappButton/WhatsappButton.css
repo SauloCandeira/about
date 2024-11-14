@@ -1,0 +1,30 @@
+/* src/components/WhatsappButton/WhatsappButton.css */
+
+/* Botão fixo do WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza a transição de transformação e sombra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Efeito de hover */
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
+}
+
+/* Garantir que o ícone esteja centralizado corretamente */
+.whatsapp-button > svg {
+  width: 30px; /* Ajusta o tamanho do ícone */
+  height: 30px; /* Ajusta o tamanho do ícone */
+  display: block; /* Garante que o ícone seja exibido corretamente */
+}
