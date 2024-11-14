@@ -39,7 +39,7 @@ const Home: React.FC = () => {
       </footer>
 
       {/* Usando o componente WhatsappButton */}
-      <WhatsappButton phoneNumber="5511999999999" /> {/* Substitua pelo seu número */}
+      <WhatsappButton phoneNumber="5561981374279" /> {/* Substitua pelo seu número */}
     </div>
   );
 };
