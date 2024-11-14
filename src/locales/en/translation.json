@@ -48,5 +48,11 @@
       "managementSystem": "Management System",
       "managementSystemDesc": "Project management system to maximize business or project efficiency."
     }
+  },
+
+  "footer": {
+    "name": "Saulo Candeira",
+    "allRightsReserved": "All rights reserved"
   }
+
 }

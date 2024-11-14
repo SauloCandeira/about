@@ -5,7 +5,7 @@ import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'; // Importa 
 
 const Header: React.FC = () => {
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <header className="header">
@@ -13,7 +13,7 @@ const Header: React.FC = () => {
       <LanguageSwitcher />
       </div>
 
-      <nav className="header__nav">
+      {/* <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__nav-item">
             <a href="/" className="header__nav-link">Sobre</a>
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
             <a href="/services" className="header__nav-link">Portifolio</a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 };

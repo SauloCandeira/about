@@ -49,6 +49,11 @@
       "managementSystem": "Sistema de Gestão",
       "managementSystemDesc": "Sistema de gestão de projetos para maximizar a eficiência do negócio ou projeto."
     }
+  },
+
+  "footer": {
+    "name": "Saulo Candeira",
+    "allRightsReserved": "Todos os direitos reservados"
   }
 
 

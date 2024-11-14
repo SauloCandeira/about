@@ -7,46 +7,38 @@ import FounderCard from '../../components/FounderCard/FounderCard';
 // import Marketplace from '../../components/Marketplace/Marketplace';
 import Services from '../../components/Services/Services';
 // import HeaderTwo from '../../components/HeaderTwo/HeaderTwo';
+import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
-  
-    const founder = {
-        name: 'Saulo Candeira',
-        position: 'Desenvolvedor de Software e Eletrônica',
-        image: 'https://via.placeholder.com/150',
-        description: 'Tenho formação em gestão, tecnologia e idiomas, e sou dedicado ao desenvolvimento de software e eletrônica. Busco integrar o mundo dos softwares, impressão 3D e eletrônica para criar inovações tecnológicas. Atuo como programador e, no meu tempo livre, desenvolvo principalmente integrações de placas programáveis com motores elétricos para máquinas CNC, patinetes, bicicletas e drones.',
-        linkedin: 'https://www.linkedin.com/in/saulocandeira',
-        github: 'https://github.com/saulocandeira',
-        resume: 'https://example.com/resume.pdf'
-    };
-  
-    return (
+  const { t } = useTranslation();
+
+  const founder = {
+    name: t('founderCard.name'),
+    position: t('founderCard.position'),
+    image: 'https://via.placeholder.com/150',
+    description: t('founderCard.description'),
+    linkedin: 'https://www.linkedin.com/in/saulocandeira',
+    github: 'https://github.com/saulocandeira',
+    resume: 'https://example.com/resume.pdf'
+  };
+
+  return (
     <div className="home">
-        
       <Header />
 
-      
       <main className="home__main">
         <section className="home__hero">
-         
-            <FounderCard {...founder} />
-            <Services />
-            <Projects />
-            {/* <Courses/> */}
-            {/* <Marketplace/> */}
-
+          <FounderCard {...founder} />
+          <Services />
+          <Projects />
+          {/* <Courses /> */}
+          {/* <Marketplace /> */}
         </section>
-
-         
-
       </main>
-      
-      
+
       <footer className="home__footer">
-        <p>&copy; 2024 Nosso Website. Todos os direitos reservados.</p>
+        <p>&copy; 2024 {t('footer.name')}. {t('footer.allRightsReserved')}</p>
       </footer>
-
-
     </div>
   );
 };
