@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import Countdown2 from "../Countdown/Countdown2";
 import { Project, data } from '../../Interfaces/InterfaceProject'; 
+import { useTranslation } from 'react-i18next';
 import "./Projects.css";
 
 function Projects() {
+    const { t } = useTranslation();
     const [dates, setDates] = useState<Project[]>([]);
 
     useEffect(() => {
@@ -13,7 +15,7 @@ function Projects() {
 
     return (
         <section className="StyleCard">
-            <h1 className="marketplace-title">Portifolio</h1>
+            <h1 className="marketplace-title">{t('projects.title')}</h1>
             <div className="slider owl-carousel">
                 {dates.map((item, index) => (
                     <div 
@@ -31,18 +33,18 @@ function Projects() {
                             </div>
                             <div className="btn-website">
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                    <button>Website</button>
+                                    <button>{t('projects.websiteButton')}</button>
                                 </a>
                             </div>
                             <div className="btn">
                                 <Link to={`/project/${item.id}`}>
-                                    <button>Cronograma</button>
+                                    <button>{t('projects.scheduleButton')}</button>
                                 </Link>
                             </div>
                         </div>
                         {item.status === "não iniciado" && (
                             <div className="overlay">
-                                Em breve...
+                                {t('projects.comingSoon')}
                             </div>
                         )}
                     </div>

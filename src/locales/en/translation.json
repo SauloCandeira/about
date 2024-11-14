@@ -50,6 +50,14 @@
     }
   },
 
+
+  "projects": {
+    "title": "Portfolio",
+    "websiteButton": "Website",
+    "scheduleButton": "Schedule",
+    "comingSoon": "Coming soon..."
+  },
+
   "footer": {
     "name": "Saulo Candeira",
     "allRightsReserved": "All rights reserved"
