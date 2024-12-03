@@ -3,6 +3,8 @@
 import React from 'react';
 import './FounderCard.css';
 import img from '../../assets/SauloCandeira.jpg';
+import curriculo from '../../assets/curriculo-br.jpg';
+import resumeUSA from '../../assets/resume-usa.jpg';
 import { useTranslation } from 'react-i18next';
 
 interface Founder {
@@ -12,7 +14,13 @@ interface Founder {
 }
 
 const FounderCard: React.FC<Founder> = ({ linkedin, github, resume }) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    // Determina o arquivo de currículo com base no idioma
+    const resumeFile =
+        i18n.language === 'en'
+            ? resumeUSA
+            :  curriculo;
 
     return (
         <div className="founder-card">
@@ -45,7 +53,7 @@ const FounderCard: React.FC<Founder> = ({ linkedin, github, resume }) => {
                 )}
                 {resume && (
                     <a
-                        href={resume}
+                        href={resumeFile}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="resume-button"
