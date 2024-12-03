@@ -68,8 +68,12 @@ function calculateTotalSales(sales: Sale[]): number {
 
 function calculateTotalProgress(tasks: Task[]): number {
     if (tasks.length === 0) return 0;
+
     const totalProgress = tasks.reduce((sum, task) => sum + task.progress, 0);
-    return totalProgress / tasks.length;
+    const averageProgress = totalProgress / tasks.length;
+
+    // Retorna o valor com duas casas decimais
+    return parseFloat(averageProgress.toFixed(2));
 }
 
 export const data: Project[] = [
