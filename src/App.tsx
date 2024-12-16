@@ -9,7 +9,7 @@ export function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path="/about/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
     </BrowserRouter>
